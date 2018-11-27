@@ -93,7 +93,7 @@ pessoa.nomeCompleto() \\"Rui Alves"
 Qual a idade da pessoa? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
-pessoa.mostrarAltura()\\"Minha altura é 1.83 m."
+pessoa.mostrarIdade()\\"Minha altura é 1.83 m."
 
 /*
 Qual o peso da pessoa? (Use a instrução para responder e comentários
@@ -105,7 +105,7 @@ pessoa.mostrarPeso()\\"Minha altura é 1.83 m."
 Qual a altura da pessoa? (Use a instrução para responder e comentários
 inline ao lado da instrução para mostrar qual foi a resposta retornada)
 */
-pessoa.mostrarPeso()\\"O meu peso é 93 kg"
+pessoa.mostrarAltura()\\"O meu peso é 93 kg"
 
 /*
 Faça a `pessoa` fazer 3 aniversários.
