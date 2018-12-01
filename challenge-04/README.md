@@ -106,12 +106,22 @@ mostrar quantos assentos ainda podem ser ocupados, com a frase:
 - Se couber somente mais uma pessoa, mostrar a palavra "pessoa" no retorno
 citado acima, no lugar de "pessoas".
 */
-carro.adicionarPessoas = function(valor){
- var adicionar = valor + carro.quantidadePessoas;   
+carro.adicionarPessoas = function(pessoas){
+   var adicionar = pessoas + carro.quantidadePessoas;  
+    carro.quantidadePessoas =adicionar;
+    var numeroAssentos =  carro.assentos - carro.quantidadePessoas;
+    carro.assentos = numeroAssentos;
     
-  var numeroAssentos = adicionar - carro.assentos;  
-    if(carro.assentos == 0)
-    {"O carro já está lotado!"} else if ( return valor > carro.assentos){"Só cabem mais" + numeroAssentos +" pessoas!"}   return "Já temos "+ carro.assentos +" pessoas no carro!";
+    if(carro.assentos <= 0)
+    {
+    return "O carro já está lotado!"
+    }
+   
+    return "Já temos "+ carro.quantidadePessoas +" pessoas no carro!"
+    
+    
+    
+    
 }
 
 /*
