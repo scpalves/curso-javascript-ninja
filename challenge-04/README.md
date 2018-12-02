@@ -130,38 +130,47 @@ retornar algum valor.
 
 Qual a cor atual do carro?
 */
-?
+carro.obterCor() //"Cizento"
 
 // Mude a cor do carro para vermelho.
-?
+carro.mudaCor("Vermelho")
+
 
 // E agora, qual a cor do carro?
-?
+"Vermelho"
 
 // Mude a cor do carro para verde musgo.
-?
+carro.mudaCor("Verde musgo")
 
 // E agora, qual a cor do carro?
-?
+"Verde musgo"
 
 // Qual a marca e modelo do carro?
-?
+carro.obterMarcaModelo()//"Esse carro é um Mercedes E270"
 
 // Adicione 2 pessoas no carro.
-?
+carro.adicionarPessoas(2) \\"Só cabem mais 3 pessoas!Já temos 2 pessoas no carro!"
 
 // Adicione mais 4 pessoas no carro.
-?
+carro.adicionarPessoas(4)\\"Só cabem mais 3 pessoas!Já temos 2 pessoas no carro!"
 
 // Faça o carro encher.
-?
+carro.adicionarPessoas(3)\\"O carro já está lotado!Já temos 5 pessoas no carro!"
 
 // Tire 4 pessoas do carro.
-?
+carro.removerPessoas = function(remover){
+    
+    var removerPessoas = carro.quantidadePessoas - remover;
+    carro.quantidadePessoas = removerPessoas
+    
+    return  "Ficamos com "+ removerPessoas +" pessoas no carro!";   
+}
+
+carro.removerPessoas(4) \\"Ficamos com 1 pessoas no carro!"
+
 
 // Adicione 10 pessoas no carro.
-?
+carro.adicionarPessoas(10)\\"Só cabem mais 4 pessoas!Já temos 1 pessoas no carro!"
 
 // Quantas pessoas temos no carro?
-?
-```
+carro.quantidadePessoas \\1
