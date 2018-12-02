@@ -108,7 +108,7 @@ citado acima, no lugar de "pessoas".
 */
 carro.adicionarPessoas = function(pessoas){
  var pessoasAdicionadas = pessoas + carro.quantidadePessoas;
-     if(carro.quantidadePessoas <5 ){ carro.quantidadePessoas =pessoasAdicionadas;}
+     if(carro.quantidadePessoas <5 && pessoasAdicionadas <6 ){ carro.quantidadePessoas =pessoasAdicionadas;}
     var numeroAssentosDisponiveis =  carro.assentos -carro.quantidadePessoas;
  
    	   if(numeroAssentosDisponiveis <= 0)
