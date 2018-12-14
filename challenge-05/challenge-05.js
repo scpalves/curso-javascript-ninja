@@ -2,17 +2,22 @@
 Crie uma variável qualquer, que receba um array com alguns valores aleatórios
 - ao menos 5 - (fica por sua conta os valores do array).
 */
-Teste
+var array =[2,3,5,8,9]
 
 /*
 Crie uma função que receba um array como parâmetro, e retorne esse array.
 */
-// ?
+var arrayFuntion = function (input){
+return input;   
+}
+
+arrayFuntion(array) //(5) [2, 3, 5, 8, 9]
+
 
 /*
 Imprima o segundo índice do array retornado pela função criada acima.
 */
-// ?
+arrayFuntion(array)[1] //3
 
 /*
 Crie uma função que receba dois parâmetros: o primeiro, um array de valores; e o
