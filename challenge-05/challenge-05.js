@@ -25,18 +25,33 @@ segundo, um número. A função deve retornar o valor de um índice do array que
 no primeiro parâmetro. O índice usado para retornar o valor, deve ser o número passado no
 segundo parâmetro.
 */
-// ?
+var indiceArray = function (input,num){ 
+     return    input[num]; 
+}
+//[2, 3, 5, 8, 9]
+//indiceArray(array,2)
+//5
+
 
 /*
 Declare uma variável que recebe um array com 5 valores, de tipos diferentes.
 */
-// ?
+var someTypeArray = ['Rui',9,'July',true,1978]
 
 /*
 Invoque a função criada acima, fazendo-a retornar todos os valores do último
 array criado.
 */
-// ?
+//someTypeArray[1]
+//9
+//someTypeArray[2]
+//"July"
+//someTypeArray[0]
+//"Rui"
+//someTypeArray[3]
+//true
+//someTypeArray[4]
+//1978
 
 /*
 Crie uma função chamada `book`, que recebe um parâmetro, que será o nome do
