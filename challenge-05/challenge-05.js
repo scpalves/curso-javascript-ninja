@@ -67,7 +67,53 @@ propriedades:
 - Se o parâmetro não for passado, a função deve retornar o objeto com todos
 os livros.
 */
-// ?
+function book(BookOne){
+ 
+BookOne.livro1 = livro1;
+BookOne.livro2 = livro2 ;   
+BookOne.livro3=livro3;    
+    
+    if (BookOne.livro2 == undefined  && BookOne.livro3 == undefined){
+    
+ 	return livro1; 
+    }
+    else if (BookOne.livro1 == undefined  && BookOne.livro3 == undefined){
+    
+ 	return livro2; 
+    }
+    else if (BookOne.livro2 == undefined  && BookOne.livro1 == undefined){
+    
+ 	return livro3; 
+    }     
+     else
+     {
+        return livro1 + livro3 + livro2 ; 
+     }     
+     
+  
+  var livro1 = {
+ quantidadePaginas:245, 
+ autor:'Rui Alves', 
+ editora:'Porto Editora'
+    
+    
+}
+undefined
+var livro2 = {
+ quantidadePaginas:452, 
+ autor:'Sónia Lopes', 
+ editora:'Porto Editora'
+    
+    
+}
+undefined
+var livro3 = {
+ quantidadePaginas:452, 
+ autor:'João Lopes', 
+ editora:'Porto Editora'
+    
+    
+}
 
 /*
 Usando a função criada acima, imprima o objeto com todos os livros.
