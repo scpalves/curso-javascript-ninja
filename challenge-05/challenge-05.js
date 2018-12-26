@@ -2,7 +2,7 @@
 Crie uma variável qualquer, que receba um array com alguns valores aleatórios
 - ao menos 5 - (fica por sua conta os valores do array).
 */
-var array =[2,3,5,8,9]
+var array =[2,'Rui',null,{a:2},function(){}]
 
 /*
 Crie uma função que receba um array como parâmetro, e retorne esse array.
@@ -36,12 +36,13 @@ var indiceArray = function (input,num){
 /*
 Declare uma variável que recebe um array com 5 valores, de tipos diferentes.
 */
-var someTypeArray = ['Rui',9,'July',true,1978]
+var someTypeArray = ['Rui',54.4,[4,2,'Alves'],true,{c:4}]
 
 /*
 Invoque a função criada acima, fazendo-a retornar todos os valores do último
 array criado.
 */
+//indiceArray(someTypeArray ,4)
 //someTypeArray[1]
 //9
 //someTypeArray[2]
@@ -67,47 +68,19 @@ propriedades:
 - Se o parâmetro não for passado, a função deve retornar o objeto com todos
 os livros.
 */
-  var livro1 = {
- quantidadePaginas:245, 
- autor:'Rui Alves', 
- editora:'Porto Editora'
-  
-}
-var livro2 = {
- quantidadePaginas:452, 
- autor:'Sónia Lopes', 
- editora:'Porto Editora'
-   
-}
+  function book (bookName){
+var allBooks = {
 
-var livro3 = {
- quantidadePaginas:452, 
- autor:'João Lopes', 
- editora:'Porto Editora'
-   
-}
+      'name1':{nome:'livro1',quantidadePaginas:245,autor:'Rui Alves',editora:'Porto Editora' },
+    'name2':{nome:'livro2',quantidadePaginas:452,autor:'Sónia Lopes',editora:'Porto Editora' },
+   'name3':{nome:'livro3',quantidadePaginas:533,autor:'Maria Alves',editora:'Porto Editora' }
 
-
-function book (bookName){
+};
     
-         
-if ( bookName === livro2)
-    {
-    return  livro2;
-   }
-      else if( bookName === livro3)
-    {
-    return  livro3;
-   }
-    else if ( bookName === livro1)
-    {
-    return  livro1;
-   }
-   else if (bookName === undefined){ 
-    return  [livro3,livro1 , livro2] ;
-   }}
+      return !bookName?allBooks : allBooks[bookName];
 
-
+      }
+    
 
 
 
@@ -116,9 +89,6 @@ if ( bookName === livro2)
 Usando a função criada acima, imprima o objeto com todos os livros.
 */
 book()
-//0: {quantidadePaginas: 452, autor: "João Lopes", editora: "Porto Editora"}autor: "João Lopes"editora: "Porto Editora"quantidadePaginas: 452__proto__: 
-//Object1: {quantidadePaginas: 245, autor: "Rui Alves", editora: "Porto Editora"}autor: "Rui Alves"editora: "Porto Editora"quantidadePaginas: 245__proto__: 
-//Object2: {quantidadePaginas: 452, autor: "Sónia Lopes", editora: "Porto Editora"}length: 3__proto__: Array(0)
 
 
 
@@ -127,69 +97,16 @@ Ainda com a função acima, imprima a quantidade de páginas de um livro qualque
 usando a frase:
 "O livro [NOME_DO_LIVRO] tem [X] páginas!"
 */
-function book (bookName){
-
-         
-if ( bookName === livro2)
-    {
-    return  livro2;
-   }
-      else if( bookName === livro3)
-    {
-    return  livro3;
-   }
-    else if ( bookName === livro1)
-    {
-    return  livro1;
-   }
-   else if (bookName === undefined){ 
-    return  [livro3,livro1 , livro2,'O livro '+ livro1 +' tem ' +livro1.quantidadePaginas+ ' páginas!','O autor do livro '+ livro1 +' é ' +livro1.autor,'O livro '+ livro1 +' foi publicado pela ' +livro1.editora];
-   }}
-
+console.log('O  '+ book('name1').nome +' tem ' + book('name1').quantidadePaginas+ ' páginas!','O autor do  '+ book('name1').nome +' é ' +book('name1').autor,'O '+ book('name1').nome +' foi publicado pela ' +book('name1').editora)
 /*
 Ainda com a função acima, imprima o nome do autor de um livro qualquer, usando
 a frase:
 "O autor do livro [NOME_DO_LIVRO] é [AUTOR]."
 */
-function book (bookName){
-
-         
-if ( bookName === livro2)
-    {
-    return  livro2;
-   }
-      else if( bookName === livro3)
-    {
-    return  livro3;
-   }
-    else if ( bookName === livro1)
-    {
-    return  livro1;
-   }
-   else if (bookName === undefined){ 
-    return  [livro3,livro1 , livro2,'O livro '+ livro1 +' tem ' +livro1.quantidadePaginas+ ' páginas!','O autor do livro '+ livro1 +' é ' +livro1.autor,'O livro '+ livro1 +' foi publicado pela ' +livro1.editora];
-   }}
-
+console.log('O  '+ book('name1').nome +' tem ' + book('name1').quantidadePaginas+ ' páginas!','O autor do  '+ book('name1').nome +' é ' +book('name1').autor,'O '+ book('name1').nome +' foi publicado pela ' +book('name1').editora)
 /*
 Ainda com a função acima, imprima o nome da editora de um livro qualquer, usando
 a frase:
 "O livro [NOME_DO_LIVRO] foi publicado pela editora [NOME_DA_EDITORA]."
 */
-function book (bookName){
-
-         
-if ( bookName === livro2)
-    {
-    return  livro2;
-   }
-      else if( bookName === livro3)
-    {
-    return  livro3;
-   }
-    else if ( bookName === livro1)
-    {
-    return  livro1;
-   }
-   else if (bookName === undefined){ 
-    return  [livro3,livro1 , livro2,'O livro '+ livro1 +' tem ' +livro1.quantidadePaginas+ ' páginas!','O autor do livro '+ livro1 +' é ' +livro1.autor,'O livro '+ livro1 +' foi publicado pela ' +livro1.editora];
-   }}
+console.log('O  '+ book('name1').nome +' tem ' + book('name1').quantidadePaginas+ ' páginas!','O autor do  '+ book('name1').nome +' é ' +book('name1').autor,'O '+ book('name1').nome +' foi publicado pela ' +book('name1').editora)
