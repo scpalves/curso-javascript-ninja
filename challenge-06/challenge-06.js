@@ -13,7 +13,7 @@ estar na ordem em que eles aparecem na tabela no momento da solução desse
 desafio.
 */
 // ?
-
+var teams = ['Sporting','Porto','Setubal','Belenenses','Boavista']
 console.log( 'Times que estão participando do campeonato:', teams );
 
 /*
