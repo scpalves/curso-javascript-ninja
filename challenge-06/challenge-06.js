@@ -33,7 +33,7 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
     "Não temos a informação do time que está nessa posição."
 */
 function showTeamPosition (pos){
-      position = teams[pos];
+      position = teams[pos -1];
      switch(pos){
          case 0:
      return  'A equipa que está no '+ pos+'º lugar é o '+ position;
@@ -54,6 +54,21 @@ function showTeamPosition (pos){
     return  'Não temos a informação da equipa que está nessa posição.';  
 }  
 }
+
+
+ou
+
+
+function showTeamPosition (pos){
+    if(pos < 1 || pos > 5)
+    {
+        return 'Não temos a informação da equipa que está nessa posição.';
+    }
+    return 'A equipa que está no '+ pos+'º lugar é o '+ teams[pos -1] + '.';
+
+}
+
+
 
 /*
 Escolha 4 times do campeonato selecionado e mostre a posição dele, usando a
@@ -84,9 +99,33 @@ Crie uma função chamada `convertToHex`, com as seguintes características:
     a frase:
     "Não temos o equivalente hexadecimal para [COR]."
 */
-// ?
+function convertToHex(cores){
+
+       switch(cores){
+      case 'verde':
+          return  'O hexadecimal para a cor '+ cores +' é #0000FF';
+    break;
+    case 'vermelho':
+     return  'O hexadecimal para a cor '+ cores +' é #FF0000';
+    break;
+        case 'castanho':
+     return  'O hexadecimal para a cor '+ cores +' é #8B4513';
+    break;
+        case 'amarelo':
+     return  'O hexadecimal para a cor '+ cores +' é #FFFF00';
+    break;
+              case 'azul':
+     return 'O hexadecimal para a cor '+ cores +' é #0000FF';
+    break;
+         default:
+    return  'Não temos o equivalente hexadecimal para a '+cores;  
+}  
+    
+    
+}
 
 /*
 Tente mostrar o hexadecimal de 8 cores diferentes usando a função criada acima.
 */
-// ?
+console.log(convertToHex('verde'))
+console.log(convertToHex('azul'))
