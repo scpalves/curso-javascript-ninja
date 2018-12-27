@@ -124,6 +124,35 @@ function convertToHex(cores){
     
 }
 
+
+ou
+
+function convertToHex(cores){
+var hexa;
+       switch(cores){
+      case 'verde':
+      hexa ='#0000FF';  
+    break;
+    case 'vermelho':
+     hexa ='#FF0000';
+    break;
+        case 'castanho':
+      hexa ='#8B4513'; 
+    break;
+        case 'amarelo':
+       hexa ='#FFFF00';  
+    break;
+              case 'azul':
+       hexa ='#0000FF';     
+    break;
+         default:
+    return  'Não temos o equivalente hexadecimal para a '+cores;  
+}  
+   return  'O hexadecimal para a cor '+ cores +' é '+ hexa;
+    
+}
+
+
 /*
 Tente mostrar o hexadecimal de 8 cores diferentes usando a função criada acima.
 */
