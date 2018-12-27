@@ -4,7 +4,7 @@ para começar o desafio.
 Declare uma variável chamada `championship` que receberá o nome do campeonato,
 e imprima o nome desse campeonato no console.
 */
-//Teste
+var championship = 'Liga NOS'
 
 /*
 Declare uma variável chamada `teams`, que receberá um array com 5 elementos.
@@ -32,7 +32,28 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
     - Se não houver time para a posição passada, deve retornar a mensagem:
     "Não temos a informação do time que está nessa posição."
 */
-// ?
+function showTeamPosition (pos){
+      position = teams[pos];
+     switch(pos){
+         case 0:
+     return  'A equipa que está no '+ pos+'º lugar é o '+ position;
+    break;
+    case 1:
+     return  'A equipa que está no '+ pos+'º lugar é o '+ position;
+    break;
+        case 2:
+     return  'A equipa que está no '+ pos+'º lugar é o '+ position;
+    break;
+        case 3:
+     return  'A equipa que está no '+ pos+'º lugar é o '+ position;
+    break;
+              case 4:
+     return  'A equipa que está no '+ pos+'º lugar é o '+ position;
+    break;
+         default:
+    return  'Não temos a informação da equipa que está nessa posição.';  
+}  
+}
 
 /*
 Escolha 4 times do campeonato selecionado e mostre a posição dele, usando a
@@ -44,7 +65,12 @@ função acima. Entre esses 4, adicione 1 que não esteja entre os 5 primeiros.
 Mostre os números de 20 a 30 no console (inclusive o 30), usando a estrutura de
 repetição "while".
 */
-// ?
+var numero =20;
+
+while (numero <= 30 ){
+    
+   console.log(numero ++);
+}
 
 /*
 Crie uma função chamada `convertToHex`, com as seguintes características:
