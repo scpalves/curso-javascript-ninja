@@ -1,4 +1,15 @@
 /*
+Numa listagem de 20 numeros, liste os numeros pares.
+*/
+// ?
+while(num <=20){
+    
+ num % 2 === 0 ? console.log(num): '';   
+    num++
+    
+}
+
+/*
 Crie um array com 5 items (tipos variados).
 */
 // ?
