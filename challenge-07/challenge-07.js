@@ -94,15 +94,13 @@ Só vamos mudar o range:
 console.log( 'Números pares entre 100 e 120:' );
 
 for(var num = 100; num <=120; num++ ){
-   num % 2 === 0 ? console.log(num): '';    
-    num ++
+   num % 2 === 0 ? console.log(num): '';       
 }
-
 
 console.log( 'Números ímpares entre 111 e 125:' );
 
-for(var num = 110; num <125; num++ ){    
-   (num++) % 2 === 0 ? console.log(num) : '';   
+for(var num = 110; num <=125; num++ ){    
+   num % 2 !== 0 ? console.log(num) : '';   
 }
 
 
