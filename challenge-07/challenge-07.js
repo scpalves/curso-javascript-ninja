@@ -80,13 +80,11 @@ while(num <=20){
 Na mesma ideia do exercício acima: mostre agora os números ímpares.
 */
 console.log( 'Números ímpares entre 10 e 20:' );
-while(num <=19){
-    
- (num++) % 2 === 0 ? console.log(num): '';   
-    
-    
+while(num <20){
+  
+ num % 2 !== 0 ? console.log(num): '';   
+    num ++
 }
-
 /*
 Repita os mesmos exercícios feitos acima, mas agora usando o loop "for".
 Só vamos mudar o range:
