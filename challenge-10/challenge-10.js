@@ -10,9 +10,11 @@ das variáveis. Analise o que está sendo impresso no console para saber como
 resolver o problema corretamente.
 */
 var five = '5';
+var five = 5; = true em baixo
 console.log( five + ' é número?', typeof five === 'number' );
 
 var concat = 10 + 10;
+var concat = '10' + '10';= true em baixo
 console.log( '"' + concat + '" é uma string? E é igual a "1010"?', typeof concat === 'string' );
 
 /*
@@ -24,8 +26,9 @@ funcional, mas dessa vez, separando algumas responsabilidades.
 função receberá dois parâmetros e retornará a operação referente à sua
 propriedade, usando os valores passados por parâmetro.
 */
-// ?
-
+var operation = {soma: function(n1, n2){ return n1 + n2; },sub: function(n1, n2){return n1 - n2},div: function(n1, n2){return n1 / n2; },multi: function(n1, n2){return n1 * n2; } }
+var operation = {'+': function(n1, n2){ return n1 + n2; },'-': function(n1, n2){return n1 - n2},'/': function(n1, n2){return n1 / n2; },'*': function(n1, n2){return n1 * n2; } }
+operation["*"](10,2)
 /*
 Crie uma função chamada `isOperatorValid`, que receberá um operador por
 parâmetro.
@@ -36,7 +39,17 @@ parâmetro a ela é válido, ou seja, se ele é igual a '+', '-', '*', '/' ou
 Caso contrário, "false".
 - O desafio é fazer o retorno sem usar "if" ou "switch".
 */
-// ?
+function isOperatorValid (op){ 
+    
+    if( op === '+' ||op === '-' ||op === '/' ||op === '*' )
+    {
+    
+    return true;
+    }
+    return false ;
+    
+    
+}
 
 /*
 Agora vamos criar a calculadora.
