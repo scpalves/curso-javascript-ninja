@@ -71,7 +71,14 @@ que foram passadas para a primeira função `calculator`.
 Declare uma variável chamada `sum`, e atribua a ela a função `calculator`,
 passando dois números por parâmetro.
 */
-// ?
+function calculator (num1, num2){
+
+    return function (callback){
+
+     return callback(num1,num2);
+      }
+}  
+    
 
 /*
 Sabemos que `sum` agora tem uma função atribuída a ela, que é o retorno de
@@ -83,15 +90,18 @@ uma função anônima que irá retornar a soma dos dois números que essa funç�
 anônima tem como seus argumentos.
 */
 console.log( 'O resultado da soma é:' );
-// ?
+
+var sum = calculator(2,3);
+var div = calculator(5,2);
 
 /*
 Agora declare outra variáveis chamadas `subtraction`, `multiplication`,
 `division` e `mod`, e atribua à elas `calculator`, passando números
+
 diferentes para cada chamada.
 */
-// ?
-
+sum(function(number1,number2){  return number1 * number2  })
+div(function(number1,number2){  return number1 / number2  })
 /*
 Mostre as variáveis acima no `console` (uma chamada de console por variável),
 criando a função de `callback` que faz o cálculo para subração, multiplicação,
