@@ -10,11 +10,11 @@ das variáveis. Analise o que está sendo impresso no console para saber como
 resolver o problema corretamente.
 */
 var five = '5';
-var five = 5; = true em baixo
+var five = number ('5'); = true em baixo
 console.log( five + ' é número?', typeof five === 'number' );
 
 var concat = 10 + 10;
-var concat = '10' + '10';= true em baixo
+var concat = string (10) + string (10);= true em baixo
 console.log( '"' + concat + '" é uma string? E é igual a "1010"?', typeof concat === 'string' );
 
 /*
