@@ -41,14 +41,16 @@ Caso contrário, "false".
 */
 function isOperatorValid (op){ 
     
-    if( op === '+' ||op === '-' ||op === '/' ||op === '*' )
-    {
+  return (op === '+' ||op === '-' ||op === '/' ||op === '*') ;
+   
+}
+
+
+function isOperatorValid (op){ 
     
-    return true;
-    }
-    return false ;
-    
-    
+  return operation[op]!== undefined ;
+   ou 
+   return !!operation[op] ;
 }
 
 /*
