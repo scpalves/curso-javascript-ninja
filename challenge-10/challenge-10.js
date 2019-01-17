@@ -63,7 +63,24 @@ parâmetros;
 operador passado para a função "calculator", e passando para esse método
 os dois parâmetros da função de retorno de "calculator".
 */
-// ?
+function calculator (op){
+ if( op === '+' ||op === '-' ||op === '/' ||op === '*' )
+    {
+    return function (num1, num2){
+if (typeof num1 === 'number' && typeof num2 === 'number'){
+    return operation[op](num1,num2)
+}
+return false ;
+       }
+    return false ;
+} 
+}
+
+soma = calculator('+');
+soma(2,3)
+
+
+
 
 /*
 Crie uma função chamada "showOperationMessage" que recebe três parâmetros:
@@ -72,7 +89,11 @@ deve ser a frase:
 'A operação [NUMBER1] [OPERATOR] [NUMBER2] =';
 Essa função mostrará a mensagem da operação que criaremos mais abaixo.
 */
-// ?
+function showOperationMessage (num1, num2,op){
+
+    return 'A operação '+ num1+' '+num2+' '+op+ ' não é permitida!';      
+}
+
 
 /*
 Crie uma função chamada "showErrorMessage" que recebe um parâmetro: o
@@ -80,7 +101,10 @@ operador da operação cálculo, quando a operação não for válida.
 Essa função deverá retornar a frase:
 'Operação "[OPERATOR]" não permitida!'
 */
-// ?
+function showOperationMessage (num1,op ,num2){
+    return 'Operação '+ op +' não é permitida!';   
+}
+
 
 /*
 Nossa calculadora está pronta! Agora vamos testá-la:
@@ -88,7 +112,9 @@ PASSO 1:
 - Declare 3 variáveis: "number1" e "number2", iniciando com valor zero, e
 "operationSignal", sem valor por enquanto.
 */
-// ?
+function showErrorMessage (op){
+    return 'Operação '+ op +' não é permitida!';    
+}
 
 /*
 PASSO 2:
