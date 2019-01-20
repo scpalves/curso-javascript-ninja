@@ -7,6 +7,16 @@ loop, mostre no console a mensagem:
 'Entrou ao menos uma vez!'
 Qual loop você deve usar para que essa mensagem seja mostrada no console?
 */
+var once = false;
+
+do {
+  console.log('Entrou ao menos uma vez!') 
+}while(once);
+
+
+
+
+
 while (once = true){
     
     console.log('Entrou ao menos uma vez!')
@@ -31,10 +41,6 @@ esse objeto tem.
 Após o loop, mostre a frase:
 'The person has [COUNTER] properties'
 */
-for (i in person){    
-    console.log('The '+ i +' of person is '+ person[i]) 
-}
-
 var counter = 0;
 
 for (i in person){    
@@ -43,7 +49,7 @@ counter ++;
      }
 
 console.log('The person has ' + counter + ' properties') 
- The person has 3 properties
+ The person has 4 properties
 
 
 
@@ -61,6 +67,16 @@ function moreThan(idade){
   }  
     return false; 
 }
+
+ou 
+
+function moreThan(idade){
+ 
+   return person.age > idade;
+
+}
+
+
 console.log('The person has more than 25 years old?'+ moreThan(25))
 
 
@@ -72,11 +88,11 @@ Mostre no console os números no array.
 console.log( 'De 0 a 10:' );
 var numbers = [];
 for (i = 0  ; i < 20 ; i++){  
-     numbers.push(i);
-    if (numbers.length > 10){
-   
+     
+    if (i > 10){
     break;
     } 
+  numbers.push(i);
 }
 console.log(numbers)
 
@@ -90,11 +106,11 @@ Mostrar no console os números do array.
 console.log( 'Pares de 0 a 20:' );
 
 for (i = 0  ; i <= 20 ; i++){   
-    if (i % 2 ===0){
-   numbers.push(i);
+    if (i % 2 !==0){
+   
     continue;
     }
-       
+      numbers.push(i); 
 }
 
 
