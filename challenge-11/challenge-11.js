@@ -88,4 +88,13 @@ esses. Se o número for ímpar, pular para o próximo número.
 Mostrar no console os números do array.
 */
 console.log( 'Pares de 0 a 20:' );
-// ?
+
+for (i = 0  ; i <= 20 ; i++){   
+    if (i % 2 ===0){
+   numbers.push(i);
+    continue;
+    }
+       
+}
+
+
