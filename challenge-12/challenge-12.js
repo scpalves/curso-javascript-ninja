@@ -1,3 +1,5 @@
+;(function(){
+
 /*
 Envolva todo o conteúdo desse arquivo em uma IIFE.
 */
@@ -21,7 +23,7 @@ Mostre no console, em um array, todas as propriedades do objeto acima.
 Não use nenhuma estrutura de repetição, nem crie o array manualmente.
 */
 Object.keys(person)
-
+  
 /*
 Crie um array vazio chamado `books`.
 */
@@ -46,7 +48,7 @@ console.log( '\nLivro que está sendo removido:' );
 /*
 Remova o último livro, e mostre-o no console.
 */
-console.log( '\nLista de livros:',books.pop(3));
+console.log( '\nLista de livros:',books.pop());
 
 console.log( '\nAgora sobraram somente os livros:' );
 /*
@@ -77,8 +79,13 @@ Mostre no console todas as propriedades e valores de todos os livros,
 no formato abaixo:
     "[PROPRIEDADE]: [VALOR]"
 */
- for (var i = 0; i < books.length; i ++ ){
-        console.log(books[i]);
+ for (var i = 0; i < object.length ; i ++ ){
+   for (var prop in books[i]){
+     
+     console.log(prop + ': '+  books[i][prop]);
+     
+   }
+   //console.log(books[i]);
      }
 
 /*
@@ -92,10 +99,10 @@ console.log( '\nMeu nome é:' );
 /*
 Juntando todos os itens do array, mostre no console seu nome.
 */
-console.log(myName)
+console.log(myName.join(''))
 
 console.log( '\nMeu nome invertido é:' );
-myName.reverse()
+myName.reverse().join('')
 
 
 /*
@@ -109,4 +116,4 @@ Mostre todos os itens do array acima, odenados alfabéticamente.
 */
 myName.sort()
 
-
+})();
