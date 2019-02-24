@@ -1,6 +1,35 @@
 /*
 Envolva todo o código desse desafio em uma IIFE.
 */
+arr.join('-')
+"1-2-3-4-5-6-7"
+
+arr.concat([3,3,[3]])
+(10) [1, 2, 3, 4, 5, 6, 7, 3, 3, Array(1)]
+
+arr.toString()
+"1,2,3,4,5,6,7"
+
+arr.slice(0,2)
+(2) [1, 2]
+
+
+arr.splice(1,0,'r')
+
+
+
+arr.forEach(function(item,index, array ){    
+   console.log(item,index, array ) 
+
+});
+
+1 0 (7) [1, 2, 3, 4, 5, 6, 7]
+2 1 (7) [1, 2, 3, 4, 5, 6, 7]
+3 2 (7) [1, 2, 3, 4, 5, 6, 7]
+4 3 (7) [1, 2, 3, 4, 5, 6, 7]
+5 4 (7) [1, 2, 3, 4, 5, 6, 7]
+6 5 (7) [1, 2, 3, 4, 5, 6, 7]
+7 6 (7) [1, 2, 3, 4, 5, 6, 7]
 
 /*
 Crie um array e mostre no console a representação em String desse array,
