@@ -31,29 +31,106 @@ arr.forEach(function(item,index, array ){
 6 5 (7) [1, 2, 3, 4, 5, 6, 7]
 7 6 (7) [1, 2, 3, 4, 5, 6, 7]
 
+
+var sum = 0;
+
+arr.forEach(function(item ){
+ sum += item     
+});
+
+console.log(sum ) 
+
+
+arr.forEach(function(item,index, array ){    
+   console.log(item,index, array ) 
+
+});
+
+//com o every todos os elementos têm que responder a verificação, se não e false
+var every = arr.every(function(item){    
+    item < 5;
+});
+every
+false
+
+
+
+//basta 1 elemento responder a verificação, será true
+var some = arr.some(function(item){    
+ return   item < 5;
+});
+every
+true
+
+
+
+//O map devolve um novo array, com o base no array original
+var map = arr.map(function(item,index, array ){    
+   console.log(item,index, array ) 
+
+});
+
+
+
+//O filter faz o filtro do array
+var filter = arr.filter(function(item,index, array ){    
+   return item > 2
+
+});
+filter
+(5) [3, 4, 5, 6, 7]
+
+
+
+// MAP com o filter
+var map = arr.map(function(item ){    
+   return item  + 10;
+});.filter(function(item ){    
+   return item > 13
+
+}); 
+//ou 
+var filter = map.filter(function(item ){    
+   return item > 13
+
+});
+
+
+
+
+
 /*
 Crie um array e mostre no console a representação em String desse array,
 usando o método visto na aula 13.
 */
 console.log( 'O array em formato de string é:' );
-// ?
+var arr = [1,2,3,4,5,6,7];
+console.log( 'O array em formato de string é:' + arr.toString() );
+
 
 /*
 Crie 2 arrays `sul` e `sudeste`, que serão as regiões do Brasil.
 Cada array deve conter os estados dessa região.
 */
 // ?
+var norte = ['Porto','Guimarães','Braga']
+var sul = ['Faro','Beja','Lisboa']
 
 /*
 Crie uma variável chamada `brasil`, que irá receber as duas regiões
 concatenadas. Mostre o `brasil` no console.
 */
-console.log( '\nAlguns Estados do Brasil:' );
+var portugal = norte.concat(sul)
+console.log( '\nAlgumas cidades de Portugal:'+  portugal);
+Algumas cidades de Portugal:Porto,Guimarães,Braga,Faro,Beja,Lisboa
 // ?
 
 /*
 Adicione 3 novos estados da região Norte no início do array e mostre no console.
 */
+
+norte.unshift('Viana do Castelo', 'Maia','Barcelos')
+
 console.log( '\nMais estados adicionados:' );
 // ?
 
@@ -62,6 +139,9 @@ Remova o primeiro estado do array `brasil` e mostre-o no console.
 */
 console.log( '\nEstado removido:' );
 // ?
+portugal.shift()
+"Porto"
+
 
 /*
 Crie um novo array chamado `newSul`, que receba somente os estados do sul,
