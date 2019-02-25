@@ -147,30 +147,35 @@ portugal.shift()
 Crie um novo array chamado `newSul`, que receba somente os estados do sul,
 pegando do array `brasil`. Não remova esses itens de `brasil`.
 */
-// ?
+var newSul = portugal.slice(6)
+
+
 
 /*
 Mostre no console os estados que estão em `newSul`.
 */
 console.log( '\nEstados do Sul do Brasil:' );
+["Faro", "Beja", "Lisboa"]
 // ?
 
 /*
 Mostre no console todos os estados que estão em `brasil`.
 */
 console.log( '\nAlguns Estados do Brasil:' );
-// ?
+portugal
+(9) ["Viana do Castelo", "Maia", "Barcelos", "Porto", "Guimarães", "Braga", "Faro", "Beja", "Lisboa"]
 
 /*
 Crie um novo array chamado `nordeste`, que tenha os estados do nordeste.
 */
-// ?
+var nordeste = ['Chaves', 'Bragança', 'Vila Real']
 
 /*
 Mostre no console os estados do nordeste.
 */
-console.log( '\nEstados do Nordeste:' );
-// ?
+console.log( '\nEstados do Nordeste: '+nordeste  );
+Estados do Nordeste: Chaves,Bragança,Vila Real
+
 
 /*
 Remova de `brasil` os estados do `sudeste`, colocando-os em uma variável
