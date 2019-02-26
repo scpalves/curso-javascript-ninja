@@ -14,7 +14,7 @@ arr.slice(0,2)
 (2) [1, 2]
 
 
-arr.splice(1,0,'r')
+arr.splice(1,0,'r')ww
 
 
 
@@ -181,25 +181,35 @@ Estados do Nordeste: Chaves,Bragança,Vila Real
 Remova de `brasil` os estados do `sudeste`, colocando-os em uma variável
 chamada `newSudeste`.
 */
-// ?
+newSudeste = portugal.splice(3,3)
+
+portugal
+(3) ["Porto", "Guimarães", "Braga"]
+newSudeste
+(3) ["Faro", "Beja", "Lisboa"]
 
 /*
 Adicione os estados do `nordeste` ao array `brasil`. Esses estados devem
 ficar no mesmo nível que os estados já existentes, não em um array separado.
 */
-// ?
+portugal.unshift(nordeste.toString());
+portugal
+(4) ["Chaves,Bragança,Vila Real", "Porto", "Guimarães", "Braga"]
+
 
 /*
 Mostre no console os estados em `newSudeste`.
 */
 console.log( '\nEstados em newSudeste:' );
-// ?
+newSudeste
+(3) ["Faro", "Beja", "Lisboa"]
 
 /*
 Mostre no console os estados do `brasil`.
 */
 console.log( '\nAlguns estados do Brasil:' );
-// ?
+portugal
+(4) ["Chaves,Bragança,Vila Real", "Porto", "Guimarães", "Braga"]
 
 /*
 usando forEach, percorra o array `brasil` e gere um novo array chamado
@@ -209,12 +219,17 @@ propriedades:
 - `estado`: que será o estado do array `brasil`.
 */
 // ?
+portugal.forEach(function(item,index, array ){    
+   return newPortugal = {Id: index, estado: array}
+});
+
+
 
 /*
 Mostre o array `newBrasil` no console
 */
-console.log( '\nnewBrasil:' );
-// ?
+console.log( '\nnewPortugal: '+ newPortugal.estado.toString() );
+newPortugal: Chaves,Bragança,Vila Real,Porto,Guimarães,Braga
 
 /*
 Percorra o array `brasil` e verifique se os estados tem mais de 7 letras cada,
