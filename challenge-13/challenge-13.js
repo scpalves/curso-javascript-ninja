@@ -117,8 +117,8 @@ var norte = ['Porto','Guimarães','Braga']
 var sul = ['Faro','Beja','Lisboa']
 
 /*
-Crie uma variável chamada `brasil`, que irá receber as duas regiões
-concatenadas. Mostre o `brasil` no console.
+Crie uma variável chamada `portugal`, que irá receber as duas regiões
+concatenadas. Mostre o `portugal` no console.
 */
 var portugal = norte.concat(sul)
 console.log( '\nAlgumas cidades de Portugal:'+  portugal);
