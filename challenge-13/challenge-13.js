@@ -14,7 +14,7 @@ arr.slice(0,2)
 (2) [1, 2]
 
 
-arr.splice(1,0,'r')ww
+arr.splice(1,0,'r')
 
 
 
@@ -147,7 +147,7 @@ portugal.shift()
 Crie um novo array chamado `newSul`, que receba somente os estados do sul,
 pegando do array `brasil`. Não remova esses itens de `brasil`.
 */
-var newSul = portugal.slice(6)
+var newSul = portugal.slice(2,5)
 
 
 
@@ -181,10 +181,10 @@ Estados do Nordeste: Chaves,Bragança,Vila Real
 Remova de `brasil` os estados do `sudeste`, colocando-os em uma variável
 chamada `newSudeste`.
 */
-newSudeste = portugal.splice(3,3)
+newSudeste = portugal.splice(2,3)
 
 portugal
-(3) ["Porto", "Guimarães", "Braga"]
+(3) [ "Guimarães", "Braga"]
 newSudeste
 (3) ["Faro", "Beja", "Lisboa"]
 
@@ -194,7 +194,7 @@ ficar no mesmo nível que os estados já existentes, não em um array separado.
 */
 portugal.unshift(nordeste.toString());
 portugal
-(4) ["Chaves,Bragança,Vila Real", "Porto", "Guimarães", "Braga"]
+(4) ["Chaves,Bragança,Vila Real", "Guimarães", "Braga"]
 
 
 /*
@@ -239,7 +239,14 @@ Senão, mostre no console:
 - "Nem todos os estados tem mais de 7 letras!"
 */
 console.log( '\nTodos os estados de `brasil` tem mais de 7 letras?' );
-// ?
+words = portugal.map(function(item){     
+    if (item > 7){
+
+    return console.log( '\nTodos os estados de `brasil` tem mais de 7 letras?' );  
+  }  
+  return  console.log( 'Nem todos os estados tem mais de 7 letras!' );
+
+    });
 
 /*
 Percorra o array `brasil` e verifique se o Ceará está incluído, atribuindo o
