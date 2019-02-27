@@ -129,7 +129,7 @@ Algumas cidades de Portugal:Porto,Guimarães,Braga,Faro,Beja,Lisboa
 Adicione 3 novos estados da região Norte no início do array e mostre no console.
 */
 
-norte.unshift('Viana do Castelo', 'Maia','Barcelos')
+portugal.unshift('Viana do Castelo', 'Maia','Barcelos')
 
 console.log( '\nMais estados adicionados:' );
 // ?
@@ -140,14 +140,14 @@ Remova o primeiro estado do array `brasil` e mostre-o no console.
 console.log( '\nEstado removido:' );
 // ?
 portugal.shift()
-"Porto"
+"Viana do Castelo"
 
 
 /*
 Crie um novo array chamado `newSul`, que receba somente os estados do sul,
 pegando do array `brasil`. Não remova esses itens de `brasil`.
 */
-var newSul = portugal.slice(2,5)
+var newSul = portugal.slice(4,7)
 
 
 
@@ -181,7 +181,7 @@ Estados do Nordeste: Chaves,Bragança,Vila Real
 Remova de `brasil` os estados do `sudeste`, colocando-os em uma variável
 chamada `newSudeste`.
 */
-newSudeste = portugal.splice(2,3)
+newSudeste = portugal.splice(4,3)
 
 portugal
 (3) [ "Guimarães", "Braga"]
@@ -192,9 +192,7 @@ newSudeste
 Adicione os estados do `nordeste` ao array `brasil`. Esses estados devem
 ficar no mesmo nível que os estados já existentes, não em um array separado.
 */
-portugal.unshift(nordeste.toString());
-portugal
-(4) ["Chaves,Bragança,Vila Real", "Guimarães", "Braga"]
+portugal = portugal.concat(nordeste)
 
 
 /*
@@ -219,8 +217,13 @@ propriedades:
 - `estado`: que será o estado do array `brasil`.
 */
 // ?
-portugal.forEach(function(item,index, array ){    
-   return newPortugal = {Id: index, estado: array}
+
+var newPortugal = {} 
+
+portugal.forEach(function(item, index){    
+    
+    newPortugal.push({id: index,estado: item});
+   
 });
 
 
@@ -257,7 +260,14 @@ Senão, mostrar a frase:
 - "Ceará não foi incluído :("
 */
 console.log( '\nCeará está incluído em `brasil`?' );
-// ?
+portugal.some(function(array ){    
+  
+if(array === 'Braga'){
+return console.log('Braga está incluído em Portugal') ;
+   }
+   return  console.log('Braga não está incluído em Portugal') ;
+
+    });
 
 /*
 Percorra o array `newBrasil` e crie um novo array que some 1 no ID de cada
