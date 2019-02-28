@@ -26,11 +26,16 @@ var reduceRight = arr.reduceRight(function(acumulado, atual, index,array){
 //'iur' faz o reduce da direita para a esquerda
 
 
+//IndexOf
+var arr =[1,2,3,4,5]
+console.log(arr.indexOf(3,2))
+2 // posição ou o indice do valor no array
 
-
-
-
-
+console.log(arr.indexOf('u')=== -1)
+false
+console.log(arr.indexOf('u') > -1)
+true
+//-1 quer dizer q nao existe 
 
 /*
 Crie um array chamado numberObjects. Esse array deve ter 10 elementos. Cada
