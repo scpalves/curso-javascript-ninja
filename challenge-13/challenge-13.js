@@ -275,7 +275,13 @@ objeto desse array, e adicione a frase abaixo na propriedade `estado`:
 - "[ESTADO] pertence ao Brasil."
 Atribua o novo array a uma variável chamada `map`.
 */
-// ?
+var map = newPortugal.map(function(item, index ){    
+    return {
+    id: item.id + 1,
+    estado: item.estado ='Pertence a Portugal'
+    }
+    
+    });
 
 /*
 Mostre no console o array criado acima:
@@ -288,6 +294,11 @@ Filtre o array criado acima, retornando somente os estados que tiverem
 ID par. Atribua o valor à uma variável chamada `filter`.
 */
 // ?
+var filter = map.filter(function(item, index ){
+    
+    return item.id % 2 ==0;
+
+});
 
 /*
 Mostre o array filtrado acima no console.
