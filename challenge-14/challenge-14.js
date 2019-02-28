@@ -2,6 +2,27 @@
 Envolva todo o código desse desafio em uma IIFE.
 */
 
+//metodo reduce, faz reduzir um array
+var arr =[1,2,3,4,5]
+var reduce = arr.reduce(function(acumulado, atual, index,array){  
+
+    return acumulado + atual;    
+    },0);
+//15
+
+var arr =['r','u','i']
+
+var reduce = arr.reduce(function(acumulado, atual, index,array){  
+ 
+    return acumulado + atual;    
+    });
+//'rui'
+
+
+
+
+
+
 /*
 Crie um array chamado numberObjects. Esse array deve ter 10 elementos. Cada
 elemento será um objeto no formato:
