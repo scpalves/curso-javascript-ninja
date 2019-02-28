@@ -19,6 +19,15 @@ var reduce = arr.reduce(function(acumulado, atual, index,array){
 //'rui'
 
 
+var reduceRight = arr.reduceRight(function(acumulado, atual, index,array){  
+    return acumulado + atual;
+    });
+
+//'iur' faz o reduce da direita para a esquerda
+
+
+
+
 
 
 
