@@ -2073,5 +2073,1117 @@ console.log( '\njustMod2Or3 é um array? Se for, a representação dele em Strin
 Desafio da semana #15
 
 
+/*
+Envolva todo o código desse desafio em uma IIFE.
+Crie um arquivo chamado index.html e adicione esse script ao HTML.
+*/
+
+/*
+Crie uma função construtora chamada "Person". Esse construtor deve ter
+as seguintes características:
+- Deve receber 3 parâmetros: `name`, `lastName` e `age`;
+- Deverá ter 3 propriedades:
+  - `name` - que receberá o valor do parâmetro `name`;
+  - `lastName` - que receberá o valor do parâmetro `lastName`;
+  - `age` - que receberá o valor do parâmetro `age`;
+- Deverá ter 3 métodos:
+  - `getFullName` - que deve retornar o nome completo do objeto criado,
+  no formato:
+    - "[NAME] [LASTNAME]"
+  - `getAge` - que deverá retornar a idade (age);
+  - `addAge` - esse método não deverá ter nenhum parâmetro, mas ao invocá-lo
+  iremos passar um único argumento, que é a quantidade de anos que devem ser
+  adicionados à idade original (age). Esse método deverá retornar o objeto
+  que será instanciado.
+*/
+// ?
+
+/*
+Crie 3 novos objetos usando o construtor acima. Os objetos serão novas
+pessoas. As variáveis deverão ser o primeiro nome da pessoa. Passe os
+parâmetros corretamente para o construtor para criar as novas pessoas.
+Mostre as 3 novas pessoas criadas no console (Um console.log por pessoa).
+*/
+console.log( 'Novas pessoas criadas à partir de Person:' );
+// ?
+
+/*
+Mostre no console o nome completo de cada pessoa.
+*/
+console.log( '\nNomes das pessoas:' );
+// ?
+
+/*
+Mostre no console as idades de cada pessoa, com a frase:
+- "[NOME COMPLETO] tem [IDADE] anos."
+*/
+console.log( '\nIdade das pessoas:' );
+// ?
+
+/*
+Adicione alguns anos à cada pessoa, e mostre no console a nova idade de
+cada um. A frase deverá ser no formato:
+- "[NOME COMPLETO] agora tem [NOVA IDADE] anos."
+*/
+console.log( '\nNova idade das pessoas:' );
+// ?
+
+
 
   
+
+Desafio da semana #16
+
+
+/*
+1. Envolva todo o conteúdo desse desafio em uma IIFE.
+2. Adicione a diretiva 'use strict';
+3. Crie um arquivo index.html e adicione esse script à ele.
+*/
+
+/*
+Declare uma variável chamada `name` que receba seu primeiro nome.
+Mostre no console todas as letras do seu nome separadas, com a frase:
+- "[LETRA] é a [POSIÇÃO]ª letra do meu nome."
+Ex: no caso do nome ser "Fernando", deve mostrar as frases:
+- "F é a 1ª letra do meu nome."
+- "e é a 2ª letra do meu nome."
+E assim por diante, até a última.
+*/
+console.log( 'As letras do seu nome:' );
+// ?
+
+/*
+- Declare uma variável chamada `fullName`, que receba seu nome completo,
+escrito no formato de slug (caixa baixa e palavras separadas por um traço).
+Ex: o nome "Fernando Daciuk" ficaria "fernando-daciuk"
+- Faça a primeira letra de cada nome ficar em caixa alta, e troque o traço
+por um espaço.
+- Detalhe: o código que você escrever abaixo deve funcionar para qualquer
+nome, então fique à vontade para usar as artimanhas que já viu até agora no
+curso para fazer isso funcionar corretamente :)
+- Mostre no console o nome no formato slug, e o resultado final. Use um
+console.log para cada formato.
+*/
+console.log( '\nNome convertido à partir de um slug:' );
+// ?
+
+/*
+- Crie um array com 5 nomes. Reduza esses nomes a uma única string, separando
+cada nome por vírgula. Entre o penúltimo e o último nome, o separador deve
+ser um "e". No final, concatene com a frase: " são meus amigos.".
+O resultado final deve ficar mais ou menos assim:
+- "João, Maria, Roberto, Pedro e Marcos são meus amigos."
+- Detalhe: o código abaixo deve funcionar com um array de qualquer tamanho.
+5 nomes foi somente uma sugestão ;)
+*/
+console.log( '\nMeus amigos:' );
+// ?
+
+/*
+Usando o replace(), faça a string "Roberto" virar "Roberta".
+Mostre o resultado no console.
+*/
+console.log( '\nEra "Roberto", agora é:' );
+// ?
+
+/*
+Mostre no console a parte "nando" da string "Fernando". Use o método que
+faz a busca do final para o início da string.
+*/
+console.log( '\nParte de uma string:' );
+// ?
+
+/*
+Declare uma variável chamada `myName`, que receba o seu primeiro nome,
+escrito de forma natural.
+Mostre no console esse nome, mas com as letras intercalando entre maiúsculas
+e minúsculas.
+- Detalhe: o código abaixo deve funcionar da mesma forma para qualquer nome,
+de qualquer tamanho, escrito de qualquer forma.
+Ex.: Nomes que deveriam funcionar: "Fernando", "RoBertO", "gabriEla", etc.
+*/
+console.log( '\nNome com letras intercaladas entre caixa alta e baixa:' );
+// ?
+
+
+
+
+Desafio da semana #17
+
+/*
+1. Envolva todo o conteúdo desse desafio em uma IIFE.
+2. Adicione a diretiva 'use strict';
+3. Crie um arquivo index.html e adicione esse script à ele.
+*/
+
+/*
+Em todos os exercícios desse desafio, nós vamos utilizar expressões
+regulares! Para isso, iremos usar o texto abaixo. Coloque-o em uma
+variável chamada `text`:
+"Manuel Marques de Sousa, Conde de Porto Alegre (Rio Grande, 13 de junho de 1804 – Rio de Janeiro, 18 de julho de 1875), apelidado de "O Centauro de Luvas", foi um militar, político, abolicionista e monarquista brasileiro."
+*/
+// ?
+
+/*
+Vamos começar com umas brincadeiras fáceis :D
+Troque o nome "Manuel Marques de Sousa" pelo seu nome, e mostre o resultado
+no console:
+*/
+console.log( 'Adicionando seu nome no texto:' );
+// ?
+
+/*
+Agora, substitua a palavra "brasileiro" por sua cidade natal e mostre no
+console.
+Ex: Se você for da São Paulo, substitua por "paulista".
+*/
+console.log( '\nTrocando naturalidade:' );
+// ?
+
+/*
+Substitua todos os números por um traço `-`. Cada caractere de número deve
+ser um traço. Mostre o resultado no console:
+*/
+console.log( '\nTrocando números por -:' );
+// ?
+
+/*
+Substitua todas as letras (somente letras) de "D" maiúsculo até "h"
+minúsculo por "0" (número zero). Mostre o resultado no console:
+*/
+console.log( '\nTrocando de "D" a "h" por "0":' );
+// ?
+
+/*
+Substitua todos os "A" (maiúsculos ou minúsculos) por "4".
+Mostre o resultado no console:
+*/
+console.log( '\nTrocando "A" e "a" por "4":' );
+// ?
+
+/*
+Substitua a frase "O Centauro de Luvas", deixando-a em caixa alta, usando
+o método `toUpperCase()`. Mostre o resultado no console:
+*/
+console.log( '\n"O Centauro de Luvas" em caixa alta:' );
+// ?
+
+/*
+Agora iremos substituir as datas no formato "13 de junho de 1804" para
+"13/06/1804". A primeira coisa a fazer é criar uma função chamada
+`getMonthNumber`, que irá receber um parâmetro (será o nome do mês) e deverá
+retornar o número correspondente a esse mês.
+Ex: Se o usuário entrar com "março", deve retornar "03" (em string mesmo).
+Números com menos de dois dígitos devem ter um zero na frente.
+Crie então a função e mostre no console os retornos para os meses de março,
+setembro e dezembro.
+Use um console.log para cada mês, usando a frase:
+"O mês de [NOME DO MÊS] é representado pelo número [NÚMERO DO MÊS]."
+*/
+console.log( '\nMeses representados por números:' );
+// ?
+
+/*
+Agora, declare uma variável chamada `regexDate` que irá receber a expressão
+regular que irá fazer o match com as datas. Crie grupos de captura para o
+dia, o mês e o ano. Para os meses, você pode fazer o match somente com os
+meses que estão no texto, não precisa adicionar todos.
+Com o que vimos até agora, você consegue fazer :D
+Mostre a regex no console.
+*/
+console.log( '\nRegex que vai fazer o match com as datas do texto:' );
+// ?
+
+/*
+Agora crie a função que irá fazer o replace dos dados. A função será chamada
+de `replaceDate`. Ela deve retornar a data no formato:
+"[DIA]/[MÊS]/[ANO]"
+Após criar a função, faça o replace das datas no texto, mostrando no
+console o resultado.
+*/
+console.log( '\nReplace de datas:' );
+// ?
+
+
+
+
+
+
+Desafio da semana #18
+
+
+/*
+1. Envolva todo o conteúdo desse desafio em uma IIFE.
+2. Adicione a diretiva 'use strict';
+3. Crie um arquivo index.html e adicione esse script à ele.
+*/
+
+/*
+Crie uma função chamada `cleanCPF`, que receba um CPF por parâmetro, e
+retorne esse CPF limpo (somente os números).
+Usando os CPFs abaixo, mostre no console que a limpeza funciona para todos
+eles! Use um console.log para cada CPF.
+- "049-214 3421-1"
+- "210.458.522-05"
+- "735 500 794 - 22"
+- "101.123-131x32"
+*/
+console.log( 'Limpando CPFs:' );
+// ?
+
+/*
+Usando os CPFs limpos acima, deixe-os com a formatação correta de CPF.
+Ex.: "999.999.999-99"
+Mostre o resultado no console.
+*/
+console.log( '\nFormatando CPFs corretamente:' );
+// ?
+
+/*
+Crie uma expressão regular que faça match com as palavras "junho" ou "julho",
+usando o mínimo de caracteres possíveis na regex.
+Para garantir que a regex funciona, teste-a usando o método match. Se houver
+o match, o método retorna um array com os matches. Caso contrário, ele
+retornará null.
+Mostre no console o resultado do match para a frase:
+"Os meses de janeiro, junho e julho começam com a letra j."
+O resultado deve ser:
+["junho", "julho"]
+*/
+console.log( '\nMatch com as palavras "junho" ou "julho" para a frase "Os meses de janeiro, junho e julho começam com a letra j.":' );
+// ?
+
+/*
+Crie uma expressão regular que faça o match com a abertura de uma tag
+HTML qualquer.
+Ex.: "<div>", "<section>", "<blockquote>".
+Use o método match e faça o teste com a marcação abaixo:
+"<div><section><blockquote>Texto <img /></blockquote></section></div>"
+O resultado deve ser:
+["<div>", "<section>", "<blockquote>"]
+*/
+console.log( '\nMatch com a abertura de uma tag HTML:' );
+// ?
+
+/*
+Crie uma expressão regular que faça o match com uma tag HTML vazia, casando
+com a abertura e fechamento da tag.
+Ex.: "<div></div>", "<section></section>", "<blockquote></blockquote>".
+Use o método match e faça o teste com a marcação abaixo:
+"<div><ul><li></li><li></li><li><span></span></li></ul></div>"
+O resultado deve ser:
+["<li></li>", "<li></li>", "<span></span>"]
+*/
+console.log( '\nMatch com tags HTML vazias (abertura e fechamento da tag):' );
+// ?
+
+/*
+Vamos complicar um pouco agora :D
+Crie uma expressão regular que faça o match com um texto existente dentro de
+uma tag HTML. O texto deve ser capturado e substituído por:
+'O texto dentro da tag "[NOME DA TAG]" é "[TEXTO]"'
+Use a marcação abaixo para fazer o replace:
+"<h1>Título da página</h1><p>Este é um parágrafo</p><footer>Rodapé</footer>"
+A marcação deve permanecer como está, somente o texto deve ser substituído.
+No replace, utilize quebras de linha para deixar uma tag por linha.
+O resultado deve ser esse:
+<h1>O texto dentro da tag "h1" é "Título da página"</h1>
+<p>O texto dentro da tag "p" é "Este é um parágrafo"</p>
+<footer>O texto dentro da tag "footer" é "Rodapé"</footer>
+Uma dica: faça o match aos poucos. Para facilitar o teste, use o site
+https://regex101.com/#javascript e verifique se as capturas estão
+corretas, para depois aplicar no código ;)
+*/
+console.log( '\nFazer replace dos textos das tags:' );
+// ?
+
+
+
+
+Desafio da semana #19
+
+/*
+1. Envolva todo o conteúdo desse desafio em uma IIFE.
+2. Adicione a diretiva 'use strict';
+3. Crie um arquivo index.html e adicione esse script à ele.
+*/
+
+/*
+Alguns detalhes importantes que faltou falar na aula:
+1. O objeto RegExp() pode receber um segundo parâmetro, que são as flags:
+- var justNumbersAndLetters = new RegExp( '[\\da-z]', 'gi' );
+2. Como a expressão regular passada para o objeto RegExp() é uma string,
+ela pode ser concatenada para gerar uma regex em tempo de execução,
+diferente da regex literal, onde toda a regex precisa estar pronta antes
+da utilização.
+*/
+
+/*
+- Usando o construtor de Regex, crie uma regex que case somente com números
+no início da string. O match precisa ser feito para todas as
+correspondências de qualquer string, não somente para a primeira, ainda que
+esta tenha muitas linhas, deve sempre casar com números no início de cada
+linha, independente de quantos caracteres de número estiverem juntos.
+- Atribua essa regex à uma variável chamada `justNumbersRegex` e mostre-a
+no console:
+*/
+console.log( 'Regex para números usando o construtor:' );
+// ?
+
+/*
+Verifique se a regex acima casa com o texto na variável `text`, mostrando o
+resultado no console. O resultado deve ser:
+"[ '10', '50' ]"
+*/
+var text = '10 anos.\n50 discos vendidos.\nE nem 10% dos meus amigos o conhece.';
+console.log( '\nNúmeros no início da linha do texto:\n' + text, '\n' );
+// ?
+
+/*
+- Crie uma regex que case com números no final de uma string. Atribua a
+regex à uma variável chamada `numbersAtTheEnd`.
+- A regex deve casar com todas as correspondências de qualquer string, ainda
+que esta tenha muitas linhas, deve sempre casar com números no fim de cada
+linha, independente de quantos caracteres de número estiverem juntos.
+Mostre a regex no console:
+*/
+console.log( '\nRegex para números somente no final das linhas:' );
+// ?
+
+/*
+Verifique se a regex acima casa com o texto na variável `otherText`,
+mostrando o resultado no console.
+O resultado deve ser:
+"[ '12', '6' ]"
+*/
+var otherText = 'Silvio Santos, nome artístico de Senor Abravanel (Rio de Janeiro, 12\n de dezembro de 1930), é um apresentador de televisão e empresário brasileiro.\n Proprietário do Grupo Silvio Santos, que inclui empresas como a Liderança\n Capitalização (administradora da loteria Tele Sena), a Jequiti Cosméticos e o\n Sistema Brasileiro de Televisão (mais conhecido como SBT), Silvio Santos possui\n um patrimônio avaliado em aproximadamente 6\n bilhões de reais.';
+console.log( '\nNúmeros no final da linha:\n\n', otherText, '\n' );
+// ?
+
+/*
+Vamos criar um método que vai testar se uma classe CSS existe em uma
+marcação HTML.
+- Primeiro, crie uma função chamada `hasClass`;
+- Essa função receberá dois parâmetros: o primeiro chamado `markup`, que
+será a marcação HTML testada, e o segundo `cssClass`, que será a classe que
+iremos testar;
+- A função deve retornar `true` se a classe existir na marcação e `false`
+caso contrário;
+- A marcação usada para testar deve ser a que está na variável `markup`
+abaixo;
+- Não altere a marcação na variável markup!
+- Faça o teste, mostrando no console o resultado para as seguintes classes:
+- "container", "text", "date", "excerpt" e "main".
+- O console deve exibir a frase:
+"[RESULTADO] para a classe [CLASSE]"
+- Ex. de resposta:
+"true para a classe container"
+- Teste uma classe por vez (um console.log por classe).
+- Lembrando que a função deve funcionar para qualquer marcação HTML e para
+qualquer classe que for testada. Os dados passados no exercício são somente
+para exemplificar.
+*/
+var markup = '<main>\n  <div class="container">\n    <span class="text date"></span>\n    <p class=\'excerpt\'></p>\n  </div>\n</main>';
+console.log( '\nQuais classes CSS existem na marcação abaixo?\n\n', markup, '\n' );
+// ?
+
+
+
+
+
+Desafio da semana #20
+
+/*
+1. Envolva todo o conteúdo desse desafio em uma IIFE.
+2. Adicione a diretiva 'use strict';
+3. Passe por parâmetro para a IIFE os objetos window e document.
+4. Dessa vez não é necessário criar um HTML. Ele já existe, e vamos utilizar
+a marcação criada nele para fazer nosso desafio ;)
+O HTML NÃO PODE ser alterado!
+*/
+
+/*
+Ao carregar a página, pergunte ao usuário "Qual o seu nome?". Atribua o
+resultado à uma variável chamada `username`. Se o usuário não digitar um
+nome, `username` deve receber "Desconhecido".
+Com a resposta, mostre um alert com a mensagem "Bem vindo [USERNAME]!"
+*/
+// ?
+
+/*
+Agora, pergunte ao usuário "Qual o seu e-mail?", atribuindo o resultado à
+uma variável chamada `email`.
+*/
+// ?
+
+/*
+- Selecione o input de "Nome", atribuindo-o à uma variável chamada
+`$inputUsername`.
+*/
+// ?
+
+/*
+- Selecione o input de "Email", atribuindo-o à uma variável chamada
+`$inputEmail`.
+*/
+// ?
+
+/*
+- Selecione o campo de "Mensagem", atribuindo-o à uma variável chamada
+`$message`.
+*/
+// ?
+
+/*
+- Selecione o botão de envio do formulário, atribuindo-o à uma variável
+chamada `$button`.
+*/
+// ?
+
+/*
+Preencha os campos de "Nome" e "Email" que estão no documento com os valores
+entrados pelo usuário.
+*/
+// ?
+
+/*
+Adicione um listener de evento de click ao botão que faça o seguinte:
+1. Verificar se todos os campos estão preenchidos:
+- Mostrar um alert para cada campo não preenchido, como abaixo:
+- Se o campo de "Nome" não estiver preenchido, mostrar:
+    - "Preencha o nome do usuário!"
+- Se o campo de "Email" não estiver preenchido, mostrar:
+    - "Preencha o e-mail!"
+- Se o campo de "Mensagem" não estiver preenchido, mostrar:
+    - "Preencha a mensagem!"
+- Se o campo de "Email" for inválido, mostrar:
+    - "Entre com um e-mail válido!"
+2. Para verificar se o e-mail é válido use a função `isValidEmail`, passando
+o e-mail que foi entrado no campo de "Email" por parâmetro. (A função
+`isValidEmail` será criada logo abaixo).
+3. Se tudo estiver OK, pergunte ao usuário:
+    - "Tem certeza que deseja enviar o formulário?"
+Se for confirmado, mostre um alerta com a mensagem:
+    - "Enviado com sucesso!"
+Caso contrário, mostre um alerta com a mensagem:
+    - "Não enviado."
+*/
+// ?
+
+/*
+Crie uma função chamada `isValidEmail`, que será usada na validação do
+envio do formulário.
+Essa função deve receber o e-mail por parâmetro e verificar se é um e-mail
+válido.
+As regras para validação são:
+    - O nome do usuário (antes do arroba), pode ser qualquer caractere
+    alfanumérico, incluindo o underscore, sinal de "+" e o ponto;
+    - Após o arroba, o domínio pode conter somente caracteres alfanuméricos
+    e o underscore;
+    - Para a extensão, o domínio deve vir seguido de um ponto, e no mínimo
+    2 caracteres alfanuméricos;
+    - O final do domínio é opcional, mas se existir, deve começar com um
+    ponto, seguido de no máximo 2 caracteres alfanuméricos.
+Alguns e-mails válidos que podem ser usados para testar:
+    - "meu.email+categoria@gmail.com"
+    - "juca_malandro@bol.com.br"
+    - "pedrobala@hotmail.uy"
+    - "sandro@culinaria.dahora"
+Alguns e-mails inválidos:
+    - "walter-da-silva@maraca.br"
+    - "rita-marica@titica.a.b"
+    - "agua_@evida.br.com"
+*/
+// ?
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Challenge 20</title>
+    <style>
+        body { font-family: sans-serif }
+        label { display: block }
+        input { margin-bottom: 10px }
+    </style>
+</head>
+<body>
+    <form action="." method="get">
+        <div>
+            <label>Nome:</label>
+            <input type="text" />
+        </div>
+
+        <div>
+            <label>E-mail:</label>
+            <input type="email" />
+        </div>
+
+        <div>
+            <label>Mensagem</label>
+            <textarea cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+
+    <script src="challenge-20.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+Desafio da semana #21
+
+
+/*
+O desafio de hoje será um pequeno projeto: um cronômetro!
+As regras para criação do cronômetro são as seguintes:
+1. Crie um arquivo index.html e adicione esse script a ele;
+2. Crie um campo `input` do tipo `text`, e inicie-o com um valor 0 (zero).
+Ele será o nosso cronômetro;
+3. Crie 3 botões para as ações do cronômetro: Start, Stop e Reset;
+4. Ao clicar em Start, o valor do campo deve ser incrementado de 1 em 1, a
+cada segundo;
+5. Ao clicar em Stop, o cronômetro deve parar de contar;
+6. Ao clicar em Reset, o cronômetro deve zerar e parar de contar.
+Utilize o atributo data-js para nomear o campo e os botões. Você pode
+usar o nome que achar melhor, desde que ele seja semântico, ou seja, o nome
+dado ao elemento HTML deve definir o que o elemento é ou o que ele faz.
+*/
+// ?
+
+
+
+
+Desafio da semana #22
+
+ /*
+  Crie dois objetos, que serão duas pessoas. Cada um deve ter as propriedades
+  `name` e `lastName`, preenchidos com o nome e sobrenome da pessoa.
+  */
+  // ?
+
+  /*
+  Agora crie uma função chamada `getFullName` que retorne as propriedades
+  `name` e `lastName` dos objetos acima, formando um nome completo.
+  A função não deve receber nenhum parâmetro, mas as propriedades `name` e
+  `lastName` devem ser dinâmicas.
+  A mesma função deve servir para as duas pessoas (ou qualquer outra que for
+  criada).
+  Depois disso, invoque essa função, mostrando no console o nome completo das
+  pessoas que foram criadas anteriormente, passando as pessoas acima como
+  contexto da função. Use um console.log por pessoa.
+  */
+  console.log( 'O nome das pessoas é:' );
+  // ?
+
+  /*
+  Crie uma função chamada `sum`. Essa função pode receber uma lista de
+  parâmetros variável, e deverá retornar a soma de todos eles.
+  Não use estruturas de repetição para somar os argumentos.
+  Na primeira linha, dentro da função, deixe um console.log para mostrar todos
+  os parâmetros passados para essa função.
+  */
+  // ?
+
+  /*
+  Mostre no console que a função acima funciona, invocando-a em 3 console.log
+  diferentes, com quantidades variáveis de parâmetros passados.
+  */
+  console.log( '\nSomar alguns números:' );
+  // ?
+
+  /*
+  Declare uma variável chamada `userEntry`, que irá receber alguns valores
+  entrados pelo usuário. Mostre para o usuário a seguinte frase:
+  "Entre com alguns números que serão somados:"
+  */
+  // ?
+
+  /*
+  Mostre no console o valor entrado pelo usuário:
+  */
+  console.log( '\nEntrada do usuário:' );
+  // ?
+
+  /*
+  Crie uma função chamada `justNumbers`, que recebe por parâmetro uma string
+  e remove tudo o que não for número, retornando um array somente com os números
+  da string. Mostre a representação em string dessa função no console.
+  */
+  console.log( '\nFunção que limpa entrada do usuário (somente números):' );
+  // ?
+
+  /*
+  Usando a função acima, faça a limpeza dos valores entrados pelo usuário,
+  atribuindo o resultado à uma variável `numbers`.
+  */
+  console.log( '\nEntrada do usuário limpa. Somente números:' );
+  // ?
+
+  /*
+  Agora com o array de números, utilize a função `sum` para somar todos os
+  números desse array e mostre o resultado no console.
+  */
+  console.log( '\nSomar números entrados pelo usuário:' );
+  // ?
+
+
+
+Desafio da semana #23
+
+
+/*
+Vamos desenvolver mais um projeto. A ideia é fazer uma mini-calculadora.
+As regras são:
+- Deve ter somente 1 input, mas não deve ser possível entrar dados nesse input
+diretamente;
+- O input deve iniciar com valor zero;
+- Deve haver 10 botões para os números de 0 a 9. Cada botão deve ser um número;
+- Deve haver 4 botões para as operações principais: soma (+), subtração(-),
+multiplicação(x) e divisão(÷);
+- Deve haver um botão de "igual" (=) que irá calcular os valores e um botão "CE"
+que irá limpar o input, deixando-o com valor 0;
+- A cada número pressionado, o input deve atualizar concatenando cada valor
+digitado, como em uma calculadora real;
+- Ao pressionar um botão com uma das 4 operações, deve aparecer o símbolo da
+operação no input. Se o último caractere no input já for um símbolo de alguma
+operação, esse caractere deve ser substituído pelo último pressionado.
+Exemplo:
+- Se o input tem os valores: "1+2+", e for pressionado o botão de
+multiplicação (x), então no input deve aparecer "1+2x".
+- Ao pressionar o botão de igual, o resultado do cálculo deve ser mostrado no
+input;
+- Ao pressionar o botão "CE", o input deve ficar zerado.
+*/
+
+
+
+Desafio da semana #24
+
+
+/*
+Nossa calculadora agora está funcional! A ideia desse desafio é modularizar
+o código, conforme vimos na aula anterior. Quebrar as responsabilidades
+em funções, onde cada função faça somente uma única coisa, e faça bem feito.
+- Remova as duplicações de código;
+- agrupe os códigos que estão soltos em funções (declarações de variáveis,
+listeners de eventos, etc);
+- faça refactories para melhorar esse código, mas de forma que o mantenha com a
+mesma funcionalidade.
+*/
+
+var $visor = document.querySelector('[data-js="visor"]');
+var $buttonsNumbers = document.querySelectorAll('[data-js="button-number"]');
+var $buttonsOperations = document.querySelectorAll('[data-js="button-operation"]');
+var $buttonCE = document.querySelector('[data-js="button-ce"]');
+var $buttonEqual = document.querySelector('[data-js="button-equal"]');
+
+Array.prototype.forEach.call($buttonsNumbers, function(button) {
+  button.addEventListener('click', handleClickNumber, false);
+});
+Array.prototype.forEach.call($buttonsOperations, function(button) {
+  button.addEventListener('click', handleClickOperation, false);
+});
+$buttonCE.addEventListener('click', handleClickCE, false);
+$buttonEqual.addEventListener('click', handleClickEqual, false);
+
+function handleClickNumber() {
+  $visor.value += this.value;
+}
+
+function handleClickOperation() {
+  $visor.value = removeLastItemIfItIsAnOperator($visor.value);
+  $visor.value += this.value;
+}
+
+function handleClickCE() {
+  $visor.value = 0;
+}
+
+function isLastItemAnOperation(number) {
+  var operations = ['+', '-', 'x', '÷'];
+  var lastItem = number.split('').pop();
+  return operations.some(function(operator) {
+    return operator === lastItem;
+  });
+}
+
+function removeLastItemIfItIsAnOperator(number) {
+  if(isLastItemAnOperation(number)) {
+    return number.slice(0, -1);
+  }
+  return number;
+}
+
+function handleClickEqual() {
+  $visor.value = removeLastItemIfItIsAnOperator($visor.value);
+  var allValues = $visor.value.match(/\d+[+x÷-]?/g);
+  $visor.value = allValues.reduce(function(accumulated, actual) {
+    var firstValue = accumulated.slice(0, -1);
+    var operator = accumulated.split('').pop();
+    var lastValue = removeLastItemIfItIsAnOperator(actual);
+    var lastOperator = isLastItemAnOperation(actual) ? actual.split('').pop() : '';
+    switch(operator) {
+      case '+':
+        return ( Number(firstValue) + Number(lastValue) ) + lastOperator;
+      case '-':
+        return ( Number(firstValue) - Number(lastValue) ) + lastOperator;
+      case 'x':
+        return ( Number(firstValue) * Number(lastValue) ) + lastOperator;
+      case '÷':
+        return ( Number(firstValue) / Number(lastValue) ) + lastOperator;
+    }
+  });
+}
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <title>Challenge 24 - Calculator</title>
+</head>
+<body>
+  <input type="text" value="0" readonly data-js="visor">
+  <div class="buttons-numbers">
+    <button data-js="button-number" value="0">0</button>
+    <button data-js="button-number" value="1">1</button>
+    <button data-js="button-number" value="2">2</button>
+    <button data-js="button-number" value="3">3</button>
+    <button data-js="button-number" value="4">4</button>
+    <button data-js="button-number" value="5">5</button>
+    <button data-js="button-number" value="6">6</button>
+    <button data-js="button-number" value="7">7</button>
+    <button data-js="button-number" value="8">8</button>
+    <button data-js="button-number" value="9">9</button>
+  </div>
+
+  <div class="operations">
+    <button data-js="button-operation" value="+">+</button>
+    <button data-js="button-operation" value="-">-</button>
+    <button data-js="button-operation" value="x">x</button>
+    <button data-js="button-operation" value="÷">÷</button>
+    <button data-js="button-equal" value="=">=</button>
+    <button data-js="button-ce" value="ce">CE</button>
+  </div>
+
+  <script src="challenge-24.js"></script>
+</body>
+</html>
+
+
+
+
+
+Desafio da semana #25
+
+
+/*
+Essa semana você terá dois desafios:
+1) Revisar todo o contéudo passado até aqui, e ver se você realmente entendeu
+tudo o que foi passado! Se tiver dúvidas, anote, e então abra issues,
+ou comente no seu pull request mesmo, que eu irei ajudá-lo a entender
+o que não ficou tão claro das aulas anteriores.
+É essencial que você entenda todo o conteúdo que foi passado até aqui,
+para que possamos prosseguir para a parte mais avançada do curso :D
+2) Estudar eventos!
+Acesse a página do MDN:
+https://developer.mozilla.org/en-US/docs/Web/Events#Categories
+Tente aplicar na prática alguns dos eventos que estão ali e coloque nesse
+desafio os experimentos legais que você conseguir desenvolver :D
+*/
+
+
+
+
+Desafio da semana #26
+
+
+
+/*
+O desafio dessa semana é criar uma mini library (biblioteca) para
+reutilizarmos nossos códigos quando fizermos manipulação de DOM!
+Requisitos:
+- O nome da lib deve ser "DOM".
+- Ela deve ser uma função construtora, que receberá uma string por parâmetro.
+Essa string será o nó do DOM a ser selecionado;
+- No construtor, você deve atribuir à `this.element` todos os elementos
+do DOM selecionados;
+- Extenda a lib para ter os métodos `on`, `off` e `get`.
+- O método `on` irá adicionar um listener de evento a todos os elementos
+selecionados.
+- O método `off` irá remover o listener de evento de todos os elementos
+selecionados.
+- O método `get` deve retornar os elementos.
+- O código abaixo deve funcionar corretamente após a lib criada.
+Dica: olhe os erros que acontecem no console, e vá resolvendo um a um.
+Só passe para o próximo problema quando tiver resolvido o anterior :)
+*/
+// ?
+
+var $a = new DOM('[data-js="link"]');
+$a.on('click', function(e) {
+  e.preventDefault();
+  console.log('clicou');
+});
+
+console.log('Elementos selecionados:', $a.get());
+console.log('$a é filho de body?', $a.get()[0].parentNode === document.body);
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <a data-js="link" href="">Link 1</a>
+  <a data-js="link" href="">Link 2</a>
+
+  <script src="challenge-26.js"></script>
+</body>
+</html>
+
+
+
+
+
+Desafio da semana #27
+
+/*
+Aproveitando a lib DOM que fizemos na semana anterior, crie agora para ela
+métodos semelhantes aos que existem no array, mas que sirvam para os
+elementos do DOM selecionados.
+Crie os seguintes métodos:
+- forEach, map, filter, reduce, reduceRight, every e some.
+Crie também métodos que verificam o tipo do objeto passado por parâmetro.
+Esses métodos não precisam depender de criar um novo elmento do DOM, podem
+ser métodos estáticos.
+Métodos estáticos não obrigam o uso do `new`, podendo ser usados diretamente
+no objeto, como nos exemplos abaixo:
+DOM.isArray([1, 2, 3]); // true
+DOM.isFunction(function() {}); // true
+DOM.isNumber('numero'); // false
+Crie os seguintes métodos para verificação de tipo:
+- isArray, isObject, isFunction, isNumber, isString, isBoolean, isNull.
+O método isNull deve retornar `true` se o valor for null ou undefined.
+*/
+
+
+
+
+
+
+Desafio da semana #28
+
+
+/*
+  No HTML:
+  - Crie um formulário com um input de texto que receberá um CEP e um botão
+  de submit;
+  - Crie uma estrutura HTML para receber informações de endereço:
+  "Logradouro, Bairro, Estado, Cidade e CEP." Essas informações serão
+  preenchidas com os dados da requisição feita no JS.
+  - Crie uma área que receberá mensagens com o status da requisição:
+  "Carregando, sucesso ou erro."
+  No JS:
+  - O CEP pode ser entrado pelo usuário com qualquer tipo de caractere, mas
+  deve ser limpo e enviado somente os números para a requisição abaixo;
+  - Ao submeter esse formulário, deve ser feito um request Ajax para a URL:
+  "https://viacep.com.br/ws/[CEP]/json/", onde [CEP] será o CEP passado
+  no input criado no HTML;
+  - Essa requisição trará dados de um CEP em JSON. Preencha campos na tela
+  com os dados recebidos.
+  - Enquanto os dados são buscados, na área de mensagens de status, deve mostrar
+  a mensagem: "Buscando informações para o CEP [CEP]..."
+  - Se não houver dados para o CEP entrado, mostrar a mensagem:
+  "Não encontramos o endereço para o CEP [CEP]."
+  - Se houver endereço para o CEP digitado, mostre a mensagem:
+  "Endereço referente ao CEP [CEP]:"
+  - Utilize a lib DOM criada anteriormente para facilitar a manipulação e
+  adicionar as informações em tela.
+  */
+
+
+
+
+
+
+Desafio da semana #29
+
+
+(function() {
+  'use strict';
+
+  /*
+  Vamos estruturar um pequeno app utilizando módulos.
+  Nosso APP vai ser um cadastro de carros. Vamos fazê-lo por partes.
+  A primeira etapa vai ser o cadastro de veículos, de deverá funcionar da
+  seguinte forma:
+  - No início do arquivo, deverá ter as informações da sua empresa - nome e
+  telefone (já vamos ver como isso vai ser feito)
+  - Ao abrir a tela, ainda não teremos carros cadastrados. Então deverá ter
+  um formulário para cadastro do carro, com os seguintes campos:
+    - Imagem do carro (deverá aceitar uma URL)
+    - Marca / Modelo
+    - Ano
+    - Placa
+    - Cor
+    - e um botão "Cadastrar"
+  Logo abaixo do formulário, deverá ter uma tabela que irá mostrar todos os
+  carros cadastrados. Ao clicar no botão de cadastrar, o novo carro deverá
+  aparecer no final da tabela.
+  Agora você precisa dar um nome para o seu app. Imagine que ele seja uma
+  empresa que vende carros. Esse nosso app será só um catálogo, por enquanto.
+  Dê um nome para a empresa e um telefone fictício, preechendo essas informações
+  no arquivo company.json que já está criado.
+  Essas informações devem ser adicionadas no HTML via Ajax.
+  Parte técnica:
+  Separe o nosso módulo de DOM criado nas últimas aulas em
+  um arquivo DOM.js.
+  E aqui nesse arquivo, faça a lógica para cadastrar os carros, em um módulo
+  que será nomeado de "app".
+  */
+
+})();
+
+
+
+//ficheiro a parte - company.json
+{
+  "name": "Your company name",
+  "phone": "(11) 3333-2222"
+}
+
+
+
+
+
+Desafio da semana #30
+
+
+/*
+A loja de carros será nosso desafio final. Na aula anterior, você fez a parte
+do cadastro dos carros. Agora nós vamos começar a deixar ele com cara de
+projeto mesmo.
+Crie um novo repositório na sua conta do GitHub, com o nome do seu projeto.
+Na hora de criar, o GitHub te dá a opção de criar o repositório com um
+README. Use essa opção.
+Após criar o repositório, clone ele na sua máquina.
+Crie uma nova branch chamada `challenge-30`, e copie tudo o que foi feito no
+desafio da aula anterior para esse novo repositório, nessa branch
+`challenge-30`.
+Adicione um arquivo na raiz desse novo repositório chamado `.gitignore`.
+O conteúdeo desse arquivo deve ser somente as duas linhas abaixo:
+node_modules
+npm-debug.log
+Faça as melhorias que você achar que são necessárias no seu código, removendo
+duplicações, deixando-o o mais legível possível, e então suba essa alteração
+para o repositório do seu projeto.
+Envie um pull request da branch `challenge-30` para a `master` e cole aqui
+nesse arquivo, dentro do `console.log`, o link para o pull request no seu
+projeto.
+*/
+
+console.log('Link do pull request do seu projeto');
+
+
+
+
+
+
+Desafio da semana #31
+// projeto tem um conjunto de ficheiros js + json a parte, ver no challange 31
+
+/*
+Agora vamos criar a funcionalidade de "remover" um carro. Adicione uma nova
+coluna na tabela, com um botão de remover.
+Ao clicar nesse botão, a linha da tabela deve ser removida.
+Faça um pull request no seu repositório, na branch `challenge-31`, e cole
+o link do pull request no `console.log` abaixo.
+Faça um pull request, também com a branch `challenge-31`, mas no repositório
+do curso, para colar o link do pull request do seu repo.
+*/
+
+console.log('Link do pull request do seu projeto');
+
+
+
+
+Desafio da semana #32
+// projeto tem um conjunto de ficheiros js + json a parte, ver no challange 32
+
+/*
+Já temos as funcionalidades de adicionar e remover um carro. Agora, vamos persistir esses dados, 
+salvando-os temporariamente na memória de um servidor.
+Nesse diretório do `challenge-32` tem uma pasta `server`. É um servidor simples, em NodeJS, para 
+que possamos utilizar para salvar as informações dos nossos carros.
+Para utilizá-lo, você vai precisar fazer o seguinte:
+- Via terminal, acesse o diretório `server`;
+- execute o comando `npm install` para instalar as dependências;
+- execute `node app.js` para iniciar o servidor.
+Ele irá ser executado na porta 3000, que pode ser acessada via browser no endereço: 
+`http://localhost:3000`
+O seu projeto não precisa estar rodando junto com o servidor. Ele pode estar em outra porta.
+As mudanças que você irá precisar fazer no seu projeto são:
+- Para listar os carros cadastrados ao carregar o seu projeto, faça um request GET no endereço
+`http://localhost:3000/car`
+- Para cadastrar um novo carro, faça um POST no endereço `http://localhost:3000/car`, enviando
+os seguintes campos:
+  - `image` com a URL da imagem do carro;
+  - `brandModel`, com a marca e modelo do carro;
+  - `year`, com o ano do carro;
+  - `plate`, com a placa do carro;
+  - `color`, com a cor do carro.
+Após enviar o POST, faça um GET no `server` e atualize a tabela para mostrar o novo carro cadastrado.
+Crie uma branch `challenge-32` no seu projeto, envie um pull request lá e cole nesse arquivo a URL
+do pull request.
+*/
+console.log('Link do pull request do seu projeto');
+
+
+
+
+
+Desafio da semana #33
+
+// projeto tem um conjunto de ficheiros js + json a parte, ver no challange 33
+
+/*
+Hora de finalizar nosso projeto!
+Já temos o cadastro funcionando e persistindo em memória;
+Já estamos deletando o carro da tabela (no frontend).
+Mas se você perceber, se você recarregar a tela, o carro ainda vai estar lá.
+Agora você precisa fazer com que, ao clicar no botão de deletar, o carro seja
+removido da tabela e também seja deletado do servidor.
+Para fazer isso, você precisa enviar o verbo HTTP "DELETE" para a mesma URL
+que você faz o POST para cadastrar o carro:
+`http://localhost:3000/car`, só que, ao invés de enviar todas as informações
+do carro, como você faz para cadastrar, você deve enviar somente a placa
+do carro.
+Fazendo isso, ao recarregar a tela, a tabela deve mostrar os carros atualizados.
+A lógica do servidor que está criada nesso diretório desse desafio é o mesmo
+do desafio anterior, com a diferença que, nesse desafio, nós temos a
+implementação da regra para a deleção do carro =)
+A regra é a mesma das anteriores: crie uma branch `challenge-33` no seu
+repositório do GitHub, e envie o pull request para lá.
+Depois, envie um pull request no repositório do curso, colocando no console.log
+abaixo a URL do pull request no seu repositório.
+*/
+console.log('Link do pull request do seu projeto');
+
+
